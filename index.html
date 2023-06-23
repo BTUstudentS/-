@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    {{ super() }}
+    <h2>Hello {{session['username']}}</h2>
+    {% for each in all_characters %}
+        <p>{{each}}</p>
+    {% endfor %}
+<img src="{{url_for('static', filename='img/game.jpg')}}">
+
+{% endblock %}

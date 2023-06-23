@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>welcome, search all game of the thrones characters {{session['username']}}</h2>
+
+    <form method="POST" style="width:50%; margin-left:20px;">
+        <input type="text" name="name" class="form-control mb-3 mt-3" placeholder="name">
+        <input type="text" name="lastname" class="form-control mb-3 mt-3" placeholder="lastname">
+        <input type="text" name="title" class="form-control mb-3 mt-3" placeholder="title">
+        <input type="text" name="family" class="form-control mb-3 mt-3" placeholder="family">
+        <button type="submit" class="btn btn-success mt-3">search</button>
+    </form>
+
+<a href="{{url_for('home')}}"> მთავარი გვერდი </a>
+{% endblock %}
+
+

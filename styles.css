@@ -1,0 +1,15 @@
+body {
+    background-color: plum;
+}
+
+.error {
+    font-weight: bold;
+    color: darkred;
+}
+
+.info {
+    font-weight: bold;
+    color: blue;
+}
+.my-class {font-size: 16px;
+}
